@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.navbar {
+  background-color: #555555;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: none;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  padding: 5px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+section {
+  text-align: center;
+  border: 1px solid #cccccc;
+  margin: 7px 17px 7px 17px;
+}
+
+ul.social {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  border-top: 1px solid #cccccc;
+  padding-top: 15px;
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header > div.logo {
+    width: 35%;
+  }
+
+  header > h1 {
+    width: 65%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 901px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .menu > li {
+    margin-left: 25px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
