@@ -69,6 +69,19 @@ ul.social {
 }
 
 @media (min-width: 901px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header > div.logo {
+    width: 35%;
+  }
+
+  header > h1 {
+    width: 65%;
+    text-align: left;
+  }
   .hamburger {
     display: none;
   }
